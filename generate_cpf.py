@@ -1,6 +1,6 @@
 from random import randint  
-start = input("Deseja gerar um CPF?:  ")
-if start == "Sim":
+start = input("Wanna generate a CPF? Type Yes:  ")
+if start == "Yes":
     cpf = ''.join([str(randint(0, 9)) for x in range(9)])
     new_cpf = cpf
     reverse = 10
