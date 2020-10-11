@@ -32,7 +32,7 @@ while count < c + 1:
 def random(n):
     for cpfs in n:
         yield cpfs
-        time.sleep(0.1)
+        time.sleep(0.2)
         
         
 s = random(storage)
