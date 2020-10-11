@@ -1,7 +1,7 @@
 from random import randint  
 import time
 start = input("Wanna generate a CPF? Type yes[y]:  ")
-c = int(input("How many CPFS do you want to generate?"))
+c = int(input("How many CPFS do you want to generate? "))
 count = 0
 storage = []
 while count < c + 1:
