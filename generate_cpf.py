@@ -1,9 +1,10 @@
 from random import randint  
 import time
 start = input("Wanna generate a CPF? Type yes[y]:  ")
+c = int(input("How many CPFS do you want to generate?"))
 count = 0
 storage = []
-while count < 11:
+while count < c + 1:
     if start.lower() == "Yes" or start.lower() == "y":
         reverse = 10
         total = 0
