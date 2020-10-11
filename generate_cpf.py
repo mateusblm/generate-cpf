@@ -24,7 +24,7 @@ while count < 11:
                     d = 0
                 total = 0
                 new_cpf += str(d)
-                storage.append(new_cpf)
+    storage.append(new_cpf)
     count += 1
              
         
