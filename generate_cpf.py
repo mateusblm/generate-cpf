@@ -3,13 +3,12 @@ import time
 start = input("Wanna generate a CPF? Type yes[y]:  ")
 count = 0
 storage = []
-cpf = ''.join([str(randint(0, 9)) for x in range(9)])
-new_cpf = cpf
 while count < 11:
     if start.lower() == "Yes" or start.lower() == "y":
         reverse = 10
         total = 0
-
+        cpf = ''.join([str(randint(0, 9)) for x in range(9)])
+        new_cpf = cpf
         for i in range(19):
             if i > 8:
                 i -= 9
@@ -25,7 +24,7 @@ while count < 11:
                     d = 0
                 total = 0
                 new_cpf += str(d)
-    storage.append(new_cpf)
+                storage.append(new_cpf)
     count += 1
              
         
