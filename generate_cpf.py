@@ -1,10 +1,10 @@
 from random import randint  
 import time
-start = input("Wanna generate a CPF? Type Yes:  ")
+start = input("Wanna generate a CPF? Type yes[y]:  ")
 count = 0
 storage = []
 while count < 11
-    if start == "Yes":
+    if start.lower() == "Yes" or start.lower() == "y":
         cpf = ''.join([str(randint(0, 9)) for x in range(9)])
         new_cpf = cpf
         reverse = 10
