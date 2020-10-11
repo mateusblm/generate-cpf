@@ -3,7 +3,7 @@ import time
 start = input("Wanna generate a CPF? Type yes[y]:  ")
 count = 0
 storage = []
-while count < 11
+while count < 11:
     if start.lower() == "Yes" or start.lower() == "y":
         cpf = ''.join([str(randint(0, 9)) for x in range(9)])
         new_cpf = cpf
